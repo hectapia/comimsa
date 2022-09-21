@@ -1,175 +1,4 @@
 
-
-
-
-let unitGroupList = [
-    [
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        [63, 58, 5, 4, 19],
-        [86, 78, 8, 9, 22],
-        [105, 93, 12, 11, 24],
-        [113, 98, 15, 10, 26],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""]
-
-    ],
-    [
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        [11, 11, 0, 1, 0],
-        [15, 15, 0, 2, 0],
-        [18, 18, 0, 2, 0],
-        [19, 18, 1, 2, 0],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""]
-
-    ],
-    [
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        [3, 3, 0, 2, 2],
-        [3, 3, 0, 1, 2],
-        [8, 8, 0, 2, 3],
-        [9, 8, 1, 2, 3],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""]
-
-    ],
-    [
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        [12, 8, 4, 0, 3],
-        [21, 15, 6, 3, 5],
-        [22, 16, 6, 3, 5],
-        [22, 16, 6, 2, 6],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""]
-
-    ],
-    [
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        [0, 0, 0, 0, 0],
-        [1, 1, 0, 0, 0],
-        [2, 2, 0, 0, 0],
-        [3, 3, 0, 0, 0],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""]
-
-    ],
-    [
-        [0, 0, 0, 0, 0],
-        [1, 1, 0, 0, 1],
-        [1, 1, 0, 0, 1],
-        [1, 1, 0, 0, 1],
-        [1, 1, 0, 0, 1],
-        [1, 1, 0, 0, 1],
-        [4, 3, 1, 0, 1],
-        [4, 3, 1, 0, 1],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""]
-
-    ],
-    [
-        [0, 0, 0, 0, 0],
-        [5, 5, 0, 0, 3],
-        [6, 6, 0, 0, 4],
-        [11, 11, 0, 0, 5],
-        [13, 13, 0, 0, 5],
-        [17, 16, 1, 0, 5],
-        [20, 18, 2, 2, 7],
-        [20, 18, 2, 2, 7],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""]
-
-    ],
-    [
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        [10, 10, 0, 0, 4],
-        [12, 12, 0, 0, 5],
-        [15, 13, 2, 0, 5],
-        [16, 14, 2, 0, 5],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""]
-
-    ],
-    [
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        [12, 11, 1, 1, 4],
-        [13, 12, 1, 2, 4],
-        [13, 12, 1, 2, 4],
-        [16, 14, 2, 0, 4],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""]
-
-    ],
-    [
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        [1, 1, 0, 0, 0],
-        [3, 3, 0, 0, 0],
-        [3, 3, 0, 0, 0],
-        [4, 4, 0, 0, 0],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""]
-
-    ],
-    [
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""]
-
-    ]
-]
-
 let equipments = [
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-0065.pdf", "images/PM-0065.jpg", "PM-0065", "1500 HP", "2006", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-0065.pdf", "doctosAE/PM-0065.pdf"],
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-0108.pdf", "images/PM-0108.jpg", "PM-0108", "1500 HP", "1965", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-0108.pdf", "doctosAE/PM-0108.pdf"],
@@ -265,7 +94,7 @@ monthData = (capacity, equipment) => {
 
     var tableHTML =
         '<table>' +
-        '<thead style="background-color: #D6EEEE">' +
+        '<thead style="background-color: rgb(23, 4, 134); color: white">' +
         '<tr><td>FotoEquipo</td><td>Equipo</td><td>Capacidad</td><td>Año</td><td>Tipo de<br>armado</td><td>Colocación</td><td>Integridad<br>Mecánica</td><td>Análisis<br>Estructural</td></tr>' + // headings
         '</thead>' +
         '<tbody>';
@@ -273,7 +102,7 @@ monthData = (capacity, equipment) => {
     for (var value in equipments) {
         if (equipments[value][5] == capacity && equipments[value][3] == equipment) {
             tableHTML += '<tr><td>';
-            tableHTML += `<img src= ${equipments[value][1]}>`;
+            tableHTML += `<img src= ${equipments[value][1]} style="border-color: rgb(1, 0, 3); border: 1px">`;
             tableHTML += '</td><td>';
             tableHTML += `<a href= ${equipments[value][0]} target='_blank'>${equipments[value][2]}</a>`;
             tableHTML += '</td><td>';
@@ -322,8 +151,40 @@ const showBy = () => {
         case 'terrestre 1500 HP':
             document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '1500 HP');
             break;
-
-    }
+        case 'terrestre 1000 HP':
+            document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '1000 HP');
+            break;
+        case 'terrestre 900 HP':
+            document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '900 HP');
+            break;
+        case 'terrestre 750 HP':
+            document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '750 HP');
+            break;
+        case 'terrestre 725 HP':tById("dynamictable").innerHTML = monthData('Terrestre', '725 HP');
+            break;
+            document.getElemen
+        case 'terrestre 700 HP':
+            document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '700 HP');
+            break;
+        case 'terrestre 600 HP':
+            document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '600 HP');
+            break;   
+        case 'terrestre 550 HP':
+            document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '550 HP');
+            break;
+        case 'terrestre 500 HP':
+            document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '500 HP');
+            break;
+        case 'terrestre 350 HP':
+            document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '350 HP');
+            break;   
+        case 'terrestre 250 HP':
+            document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '250 HP');
+            break;
+        case 'terrestre 200 HP':
+            document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '200 HP');
+            break;                         
+}
 
 }
 
