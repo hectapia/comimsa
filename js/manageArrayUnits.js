@@ -40,8 +40,8 @@ let equipments = [
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-1432.pdf", "images/PM-1432.jpg", "PM-1432", "550 HP", "2014", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-1432.pdf", "doctosAE/PM-1432.pdf"],
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-1433.pdf", "images/PM-1433.jpg", "PM-1433", "550 HP", "2014", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-1433.pdf", "doctosAE/PM-1433.pdf"],
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-1481.pdf", "images/PM-1481.jpg", "PM-1481", "1500 HP", "2014", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-1481.pdf", "doctosAE/PM-1481.pdf"],
-    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-1501.pdf", "images/PM-1501.jpg", "PM-1501", "3000 HP", "2015", "Marino", "Enpaquetado", "PAutoelevable", "doctosIM/PM-1501.pdf", "doctosAE/PM-1501.pdf"],
-    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-1502.pdf", "images/PM-1502.jpg", "PM-1502", "3000 HP", "2015", "Marino", "Enpaquetado", "PAutoelevable", "doctosIM/PM-1502.pdf", "doctosAE/PM-1502.pdf"],
+    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-1501.pdf", "images/PM-1501.jpg", "PM-1501", "3000 HP", "2015", "Marino", "Enpaquetado", "Plataforma Autoelevable", "doctosIM/PM-1501.pdf", "doctosAE/PM-1501.pdf"],
+    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-1502.pdf", "images/PM-1502.jpg", "PM-1502", "3000 HP", "2015", "Marino", "Enpaquetado", "Plataforma Autoelevable", "doctosIM/PM-1502.pdf", "doctosAE/PM-1502.pdf"],
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-1503.pdf", "images/PM-1503.jpg", "PM-1503", "3000 HP", "2015", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-1503.pdf", "doctosAE/PM-1503.pdf"],
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-1531.pdf", "images/PM-1531.jpg", "PM-1531", "500 HP", "2015", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-1531.pdf", "doctosAE/PM-1531.pdf"],
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-1532.pdf", "images/PM-1532.jpg", "PM-1532", "550 HP", "2015", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-1532.pdf", "doctosAE/PM-1532.pdf"],
@@ -50,15 +50,15 @@ let equipments = [
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-2005.pdf", "images/PM-2005.jpg", "PM-2005", "3000 HP", "1967", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-2005.pdf", "doctosAE/PM-2005.pdf"],
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4002.pdf", "images/PM-4002.jpg", "PM-4002", "1500 HP", "1958", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-4002.pdf", "doctosAE/PM-4002.pdf"],
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4016.pdf", "images/PM-4016.jpg", "PM-4016", "2000 HP", "1967", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-4016.pdf", "doctosAE/PM-4016.pdf"],
-    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4034.pdf", "images/PM-4034.jpg", "PM-4034", "2000 HP", "1980", "Marino", "Enpaquetado", "PFija", "doctosIM/PM-4034.pdf", "doctosAE/PM-4034.pdf"],
-    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4035.pdf", "images/PM-4035.jpg", "PM-4035", "2000 HP", "1981", "Marino", "Enpaquetado", "PFija", "doctosIM/PM-4035.pdf", "doctosAE/PM-4035.pdf"],
-    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4038.pdf", "images/PM-4038.jpg", "PM-4038", "2000 HP", "1980", "Marino", "Enpaquetado", "PFija", "doctosIM/PM-4038.pdf", "doctosAE/PM-4038.pdf"],
-    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4041.pdf", "images/PM-4041.jpg", "PM-4041", "2000 HP", "1982", "Marino", "Enpaquetado", "PFija", "doctosIM/PM-4041.pdf", "doctosAE/PM-4041.pdf"],
-    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4044.pdf", "images/PM-4044.jpg", "PM-4044", "2000 HP", "1984", "Marino", "Enpaquetado", "PFija", "doctosIM/PM-4044.pdf", "doctosAE/PM-4044.pdf"],
-    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4045.pdf", "images/PM-4045.jpg", "PM-4045", "2000 HP", "1984", "Marino", "Enpaquetado", "PFija", "doctosIM/PM-4045.pdf", "doctosAE/PM-4045.pdf"],
-    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4046.pdf", "images/PM-4046.jpg", "PM-4046", "2000 HP", "1985", "Marino", "Enpaquetado", "PFija", "doctosIM/PM-4046.pdf", "doctosAE/PM-4046.pdf"],
-    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4047.pdf", "images/PM-4047.jpg", "PM-4047", "2000 HP", "1987", "Marino", "Enpaquetado", "PFija", "doctosIM/PM-4047.pdf", "doctosAE/PM-4047.pdf"],
-    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4049.pdf", "images/PM-4049.jpg", "PM-4049", "2000 HP", "1988", "Marino", "Enpaquetado", "PFija", "doctosIM/PM-4049.pdf", "doctosAE/PM-4049.pdf"],
+    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4034.pdf", "images/PM-4034.jpg", "PM-4034", "2000 HP", "1980", "Marino", "Enpaquetado", "Plataforma Fija", "doctosIM/PM-4034.pdf", "doctosAE/PM-4034.pdf"],
+    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4035.pdf", "images/PM-4035.jpg", "PM-4035", "2000 HP", "1981", "Marino", "Enpaquetado", "Plataforma Fija", "doctosIM/PM-4035.pdf", "doctosAE/PM-4035.pdf"],
+    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4038.pdf", "images/PM-4038.jpg", "PM-4038", "2000 HP", "1980", "Marino", "Enpaquetado", "PlataformaP Fija", "doctosIM/PM-4038.pdf", "doctosAE/PM-4038.pdf"],
+    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4041.pdf", "images/PM-4041.jpg", "PM-4041", "2000 HP", "1982", "Marino", "Enpaquetado", "Plataforma Fija", "doctosIM/PM-4041.pdf", "doctosAE/PM-4041.pdf"],
+    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4044.pdf", "images/PM-4044.jpg", "PM-4044", "2000 HP", "1984", "Marino", "Enpaquetado", "Plataforma Fija", "doctosIM/PM-4044.pdf", "doctosAE/PM-4044.pdf"],
+    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4045.pdf", "images/PM-4045.jpg", "PM-4045", "2000 HP", "1984", "Marino", "Enpaquetado", "Plataforma Fija", "doctosIM/PM-4045.pdf", "doctosAE/PM-4045.pdf"],
+    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4046.pdf", "images/PM-4046.jpg", "PM-4046", "2000 HP", "1985", "Marino", "Enpaquetado", "Plataforma Fija", "doctosIM/PM-4046.pdf", "doctosAE/PM-4046.pdf"],
+    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4047.pdf", "images/PM-4047.jpg", "PM-4047", "2000 HP", "1987", "Marino", "Enpaquetado", "Plataforma Fija", "doctosIM/PM-4047.pdf", "doctosAE/PM-4047.pdf"],
+    ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-4049.pdf", "images/PM-4049.jpg", "PM-4049", "2000 HP", "1988", "Marino", "Enpaquetado", "Plataforma Fija", "doctosIM/PM-4049.pdf", "doctosAE/PM-4049.pdf"],
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-5521.pdf", "images/PM-5521.jpg", "PM-5521", "250 HP", "1962", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-5521.pdf", "doctosAE/PM-5521.pdf"],
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-5550.pdf", "images/PM-5550.jpg", "PM-5550", "250 HP", "1973", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-5550.pdf", "doctosAE/PM-5550.pdf"],
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-5551.pdf", "images/PM-5551.jpg", "PM-5551", "1000 HP", "1999", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-5551.pdf", "doctosAE/PM-5551.pdf"],
@@ -94,15 +94,18 @@ monthData = (capacity, equipment) => {
 
     var tableHTML =
         '<table>' +
-        '<thead style="background-color: rgb(23, 4, 134); color: white">' +
-        '<tr><td>FotoEquipo</td><td>Equipo</td><td>Capacidad</td><td>Año</td><td>Tipo de<br>armado</td><td>Colocación</td><td>Integridad<br>Mecánica</td><td>Análisis<br>Estructural</td></tr>' + // headings
-        '</thead>' +
+        '<thead>' +
+        '<tr><td class="shadowbox">Foto</td><td class="shadowbox"> Equipo Ficha técnica</td>' +
+        '<td class="shadowbox">Capacidad</td><td class="shadowbox">Año</td>' +
+        '<td class="shadowbox">Tipo de<br>armado</td><td class="shadowbox">Colocación</td>' +
+        '<td class="shadowbox">Integridad<br>Mecánica</td><td class="shadowbox">Análisis<br>Estructural</td></tr>' + 
+        '</thead>' + 
         '<tbody>';
 
     for (var value in equipments) {
         if (equipments[value][5] == capacity && equipments[value][3] == equipment) {
             tableHTML += '<tr><td>';
-            tableHTML += `<img src= ${equipments[value][1]} style="border-color: rgb(1, 0, 3); border: 1px">`;
+            tableHTML += `<img class="shadowimg" src= ${equipments[value][1]}>`;
             tableHTML += '</td><td>';
             tableHTML += `<a href= ${equipments[value][0]} target='_blank'>${equipments[value][2]}</a>`;
             tableHTML += '</td><td>';
@@ -160,7 +163,8 @@ const showBy = () => {
         case 'terrestre 750 HP':
             document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '750 HP');
             break;
-        case 'terrestre 725 HP':tById("dynamictable").innerHTML = monthData('Terrestre', '725 HP');
+        case 'terrestre 725 HP':
+            document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '725 HP');
             break;
             document.getElemen
         case 'terrestre 700 HP':
@@ -189,3 +193,8 @@ const showBy = () => {
 }
 
 document.querySelector('#showBy').addEventListener('change', showBy);
+
+let date = new Date();
+let year = date.getFullYear();
+document.getElementById('currentyear').innerHTML = year;
+document.getElementById('lastupdated').textContent = `Last Updated: ${document.lastModified}`;

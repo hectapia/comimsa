@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Equipos de perforación</title>
-
     <link rel="stylesheet" href="css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h4>Equipos de perforación</h4>
+      <img class="headerimg" src="images/header.jpg" alt="headerimage" />
+      <div class="shadowbox">
+        <h4>Equipos de perforación</h4>
+      </div>
     </header>
     <section>
       <h4>Equipos marinos y terrestres</h4>
-
       <p>
         Ubicación y Capacidad:
         <select id="showBy">
@@ -22,7 +29,6 @@
             <option value="marino 3000 HP">Marino 3000 HP</option>
             <option value="marino 2000 HP">Marino 2000 HP</option>
           </optgroup>
-
           <optgroup label="Terrestres">
             <option value="terrestre 3000 HP">Terrestre 3000 HP</option>
             <option value="terrestre 2000 HP">Terrestre 2000 HP</option>
@@ -41,18 +47,29 @@
           </optgroup>
         </select>
       </p>
-      <!-- <div id="demo"></div> -->
     </section>
 
     <div id="dynamictable"></div>
-    <script src="js/manageArrayUnits.js"></script>
+
+    <hr />
     <p>
       Fuente:
       <a
         href="https://www.pemex.com/nuestro-negocio/perforacion/perforacion/Paginas/renta-equipos.aspx"
         target="_blank"
-        >Perforación y Servicios | Perforación, terminación y reparación |Equipos</a
+        >Perforación y Servicios | Perforación, terminación y reparación
+        |Equipos</a
       >
     </p>
+    <footer>
+      <img class="footerimg" src="images/footer.jpg" alt="headerimage" />
+      <div>
+        <p class="update">
+          &copy; <span id="currentyear"></span> | Powered by COMIMSA&reg; | 
+          <span id="lastupdated"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="js/manageArrayUnits.js"></script>
   </body>
 </html>
