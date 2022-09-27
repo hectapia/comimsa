@@ -3,11 +3,22 @@ body {
   background-color: white;
   font-family: "Lato", sans-serif;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.1em;
+  font-size: 0.9em;
   margin: 10px auto;
   width: 800px;
 }
-
+h3 {
+  margin: 0.4em;
+}
+section {
+  display: flex;
+  flex-wrap: nowrap;
+  border: 1px solid #c3c3c3;
+  height: 25px;
+}
+section p {
+  margin: 1px;
+}
 select {
   width: 100%;
   min-width: 15ch;
@@ -22,12 +33,15 @@ select {
   background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
 }
 
+section div {
+  display: flex;
+}
+
 .shadowbox {
   color: white;
   background-color: rgb(137, 35, 64);
   padding: 5px;
   border-radius: 5px;
-  /*margin: auto;*/
   align-items: center;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 15px 0 rgba(0, 0, 0, 0.19);
 }
@@ -49,7 +63,6 @@ select {
   align-items: center;
 }
 
-
 table {
   width: 30%;
 }
@@ -61,11 +74,10 @@ td {
 }
 
 tr:nth-child(even) {
-  /*background-color: #e3e9e9;*/
   background-color: rgb(243, 169, 190);
 }
 
-hr{
+hr {
   border: 1px solid rgb(137, 35, 64);
 }
 
@@ -73,3 +85,40 @@ hr{
   font-size: 85%;
 }
 
+form {
+  background-color: rgb(137, 35, 64);
+  height: 25px;
+  border-radius: 3px;
+  display: flex;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 38%;
+  width: 100%;
+  padding: 6px 3px;
+  border: 1px solid rgb(137, 35, 64);
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+svg {
+  color: #fff;
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}

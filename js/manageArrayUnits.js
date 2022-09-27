@@ -123,11 +123,10 @@ monthData = (capacity, equipment) => {
             tableHTML += '</td></tr>';
         }
     }
-    tableHTML +=
+    tableHTML +=  
         '</tbody>' +
         '</table>';
     return tableHTML;
-
 }
 
 document.getElementById("dynamictable").innerHTML = monthData('Marino', '3000 HP');
@@ -188,11 +187,63 @@ const showBy = () => {
         case 'terrestre 200 HP':
             document.getElementById("dynamictable").innerHTML = monthData('Terrestre', '200 HP');
             break;                         
+    }
 }
 
+
+const forma = document.getElementById('form');
+const query = document.getElementById('query');
+
+
+function submitted(event) {
+    event.preventDefault();
+    const valor = query.value;
+    reset()
+    //let query = document.querySelector('#query').value;
+   
+    var tableHTML =
+    '<table>' +
+    '<thead>' +
+    '<tr><td class="shadowbox">Fotones</td><td class="shadowbox"> Equipo Ficha técnica</td>' +
+    '<td class="shadowbox">Capacidad</td><td class="shadowbox">Año</td>' +
+    '<td class="shadowbox">Tipo de<br>armado</td><td class="shadowbox">Colocación</td>' +
+    '<td class="shadowbox">Integridad<br>Mecánica</td><td class="shadowbox">Análisis<br>Estructural</td></tr>' + 
+    '</thead>' + 
+    '<tbody>';
+
+    //var indice = 10;
+     let v = 0;
+    for (v ; v < equipments.length; v++) {
+       if (equipments[v][2] === valor) {
+            tableHTML += '<tr><td>';
+            tableHTML += `<img class="shadowimg" src= ${equipments[v][1]}>`;
+            tableHTML += '</td><td>';
+            tableHTML += `<a href= ${equipments[v][0]} target='_blank'>${equipments[v][2]}</a>`;
+            tableHTML += '</td><td>';
+            tableHTML += equipments[v][3];
+            tableHTML += '</td><td>';
+            tableHTML += equipments[v][4];
+            tableHTML += '</td><td>';
+            tableHTML += equipments[v][6];
+            tableHTML += '</td><td>';
+            tableHTML += equipments[v][7];
+            tableHTML += '</td><td>';
+            tableHTML += `<a href='#' target='_blank'>Reporte</a>`;
+            tableHTML += '</td><td>';
+            tableHTML += `<a href='#' target='_blank'>Dictamen</a>`;
+            tableHTML += '</td></tr>';            
+        } 
+    }
+    tableHTML +=  
+        '</tbody>' +
+        '</table>' +
+        `<p>${v} Valor ${valor} de busqueda</p>`;
+    document.getElementById("dynamictable").innerHTML = tableHTML;
 }
 
+forma.addEventListener('submit', submitted);
 document.querySelector('#showBy').addEventListener('change', showBy);
+//f.addEventListener('submit', submitted);
 
 let date = new Date();
 let year = date.getFullYear();
