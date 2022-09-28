@@ -83,6 +83,11 @@ let equipments = [
     ["https://www.pemex.com/nuestro-negocio/perforacion/perforacion/ElementosRenta/PM-9114.pdf", "images/PM-9114.jpg", "PM-9114", "900 HP", "1982", "Terrestre", "Ensamblado", "Terrestre", "doctosIM/PM-9114.pdf", "doctosAE/PM-9114.pdf"]
 ]
 
+const signals = ['➖','🆗'];
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  };
 
 
 const reset = () => {
@@ -102,8 +107,12 @@ monthData = (capacity, equipment) => {
         '</thead>' + 
         '<tbody>';
 
+
+
     for (var value in equipments) {
         if (equipments[value][5] == capacity && equipments[value][3] == equipment) {
+            let y = getRndInteger(1, 2) - 1;
+            let signal = signals[y];
             tableHTML += '<tr><td>';
             tableHTML += `<img class="shadowimg" src= ${equipments[value][1]}>`;
             tableHTML += '</td><td>';
@@ -115,11 +124,11 @@ monthData = (capacity, equipment) => {
             tableHTML += '</td><td>';
             tableHTML += equipments[value][7];
             tableHTML += '</td><td>';
-            tableHTML +=  `<a href='#' target='_blank'>Fecha<br>última</a>`;
+            tableHTML +=  `<a href='#' target='_blank'><span style="font-size:1.7em;">✅</span><br>Fecha<br>última</a>`;
             tableHTML += '</td><td>';
-            tableHTML += `<a href='#' target='_blank'>Fecha<br>última</a>`;
+            tableHTML += `<a href='#' target='_blank'><span style="font-size:1.7em;">🚦</span><br>Fecha<br>última</a>`;
             tableHTML += '</td><td>';
-            tableHTML += `<a href='#' target='_blank'>Fecha<br>última</a>`;
+            tableHTML += `<a href='#' target='_blank'><span style="font-size:1.7em;">${signal}</span><br>Fecha<br>última</a>`;
             tableHTML += '</td></tr>';
         }
     }
@@ -215,6 +224,8 @@ function submitted(event) {
      let v = 0;
     for (v ; v < equipments.length; v++) {
        if (equipments[v][2] === valor) {
+            let y = getRndInteger(1, 2) - 1;
+            let signal = signals[y];
             tableHTML += '<tr><td>';
             tableHTML += `<img class="shadowimg" src= ${equipments[v][1]}>`;
             tableHTML += '</td><td>';
@@ -226,11 +237,11 @@ function submitted(event) {
             tableHTML += '</td><td>';
             tableHTML += equipments[v][7];
             tableHTML += '</td><td>';
-            tableHTML +=  `<a href='#' target='_blank'>Fecha<br>última</a>`;
+            tableHTML +=  `<a href='#' target='_blank'><span style="font-size:1.7em;">✅</span><br>Fecha<br>última</a>`;
             tableHTML += '</td><td>';
-            tableHTML += `<a href='#' target='_blank'>Fecha<br>última</a>`;
+            tableHTML += `<a href='#' target='_blank'><span style="font-size:1.7em;">🚦</span><br>Fecha<br>última</a>`;
             tableHTML += '</td><td>';
-            tableHTML += `<a href='#' target='_blank'>Fecha<br>última</a>`;
+            tableHTML += `<a href='#' target='_blank'><span style="font-size:1.7em;">${signal}</span>🚖<br>Fecha<br>última</a>`;
             tableHTML += '</td></tr>';            
         } 
     }
