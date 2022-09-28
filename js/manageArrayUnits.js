@@ -97,8 +97,8 @@ monthData = (capacity, equipment) => {
         '<thead>' +
         '<tr><td class="shadowbox">Foto</td><td class="shadowbox"> Equipo Ficha técnica</td>' +
         '<td class="shadowbox">Capacidad</td><td class="shadowbox">Año</td>' +
-        '<td class="shadowbox">Tipo de<br>armado</td><td class="shadowbox">Colocación</td>' +
-        '<td class="shadowbox">Integridad<br>Mecánica</td><td class="shadowbox">Análisis<br>Estructural</td></tr>' + 
+        '<td class="shadowbox">Colocación</td><td class="shadowbox">Categoría<br>III</td>' +
+        '<td class="shadowbox">Categoría<br>VI</td><td class="shadowbox">Análisis<br>Estructural</td></tr>' + 
         '</thead>' + 
         '<tbody>';
 
@@ -113,13 +113,13 @@ monthData = (capacity, equipment) => {
             tableHTML += '</td><td>';
             tableHTML += equipments[value][4];
             tableHTML += '</td><td>';
-            tableHTML += equipments[value][6];
-            tableHTML += '</td><td>';
             tableHTML += equipments[value][7];
             tableHTML += '</td><td>';
-            tableHTML += `<a href='#' target='_blank'>Reporte</a>`;
+            tableHTML +=  `<a href='#' target='_blank'>Fecha<br>última</a>`;
             tableHTML += '</td><td>';
-            tableHTML += `<a href='#' target='_blank'>Dictamen</a>`;
+            tableHTML += `<a href='#' target='_blank'>Fecha<br>última</a>`;
+            tableHTML += '</td><td>';
+            tableHTML += `<a href='#' target='_blank'>Fecha<br>última</a>`;
             tableHTML += '</td></tr>';
         }
     }
@@ -206,8 +206,8 @@ function submitted(event) {
     '<thead>' +
     '<tr><td class="shadowbox">Fotones</td><td class="shadowbox"> Equipo Ficha técnica</td>' +
     '<td class="shadowbox">Capacidad</td><td class="shadowbox">Año</td>' +
-    '<td class="shadowbox">Tipo de<br>armado</td><td class="shadowbox">Colocación</td>' +
-    '<td class="shadowbox">Integridad<br>Mecánica</td><td class="shadowbox">Análisis<br>Estructural</td></tr>' + 
+    '<td class="shadowbox">Colocación</td><td class="shadowbox">Categoría<br>III</td>' +
+    '<td class="shadowbox">Categoría<br>VI</td><td class="shadowbox">Análisis<br>Estructural</td></tr>' + 
     '</thead>' + 
     '<tbody>';
 
@@ -224,13 +224,13 @@ function submitted(event) {
             tableHTML += '</td><td>';
             tableHTML += equipments[v][4];
             tableHTML += '</td><td>';
-            tableHTML += equipments[v][6];
-            tableHTML += '</td><td>';
             tableHTML += equipments[v][7];
             tableHTML += '</td><td>';
-            tableHTML += `<a href='#' target='_blank'>Reporte</a>`;
+            tableHTML +=  `<a href='#' target='_blank'>Fecha<br>última</a>`;
             tableHTML += '</td><td>';
-            tableHTML += `<a href='#' target='_blank'>Dictamen</a>`;
+            tableHTML += `<a href='#' target='_blank'>Fecha<br>última</a>`;
+            tableHTML += '</td><td>';
+            tableHTML += `<a href='#' target='_blank'>Fecha<br>última</a>`;
             tableHTML += '</td></tr>';            
         } 
     }
