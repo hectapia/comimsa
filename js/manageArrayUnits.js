@@ -255,8 +255,3 @@ function submitted(event) {
 forma.addEventListener('submit', submitted);
 document.querySelector('#showBy').addEventListener('change', showBy);
 //f.addEventListener('submit', submitted);
-
-let date = new Date();
-let year = date.getFullYear();
-document.getElementById('currentyear').innerHTML = year;
-document.getElementById('lastupdated').textContent = `Last Updated: ${document.lastModified}`;
